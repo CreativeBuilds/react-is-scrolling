@@ -84,6 +84,7 @@ const IsScrollingHoC = TheComponent =>
       }
 
       if (getBrowserScrollTop(this.props.nameOfClass) <= 200) {
+        console.log('USER IS CLOSE TO TOP');
         this.setState({ isCloseToTop: true });
       } else {
         this.setState({ isCloseToTop: false });
